@@ -1,0 +1,109 @@
+﻿@model Aydinturk_agency.Models.ViewModels.CustomerDashboardVM
+@using Aydinturk_agency.Utils
+
+@{
+    ViewData["Title"] = " الصفحة الرئيسية ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+
+<body style="background:#f3f5fa">
+    <div class="container">
+        <div class="col-12">
+            @{
+                if (Model.Flights.Count == 0)
+                {
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-body h-100">
+                                <div class="text-center" role="alert">
+                                    @GetTime.GetMessage() , لاتوجد عروض اليوم
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-body h-100">
+                                <div class="text-center" role="alert">
+                                    @GetTime.GetMessage() , اليك العروض المتوفرة لهذا اليوم
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <section class="row container">
+                        <div class="col-12">
+
+                            @foreach (var flight in Model.Flights)
+                            {
+                                <div class="card mt-4" style="overflow:hidden;border:none">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div>
+                                                <img class="card-img-top" src="@flight.Company.ImageUrl" alt="Card image cap" style="border-radius: 0;height: 160px;">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-6 col-lg-3">
+                                                            <p class="card-subtitle mb-2">الشركة : @flight.Company.Name</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6 col-lg-3">
+                                                            <p class="card-subtitle mb-2">وجهة البداية : @flight.From.Name</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6 col-lg-3">
+                                                            <p class="card-subtitle mb-2">وجهة النهاية : @flight.To.Name</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6 col-lg-3">
+                                                            <p class="card-subtitle mb-2">التاريخ : @flight.Date</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6 col-lg-3">
+                                                            <p class="card-subtitle mb-2">الوقت : @flight.Time</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6 col-lg-3">
+                                                            <p class="card-subtitle mb-2">السعر  : @flight.Price$</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6 col-lg-3">
+                                                            <p class="card-subtitle mb-2">عدد المقاعد  : @flight.Sets</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6 col-lg-3">
+                                                            <p class="card-subtitle mb-2">الوزن  : @flight.Weight</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center mt-4">
+                                                        <div class="col-4"><a href="/Customer/Orders/StepOne?selection=@flight.Id" class="card-link btn btn-primary text-white w-100">أحجز</a></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            }
+
+                        </div>
+                    </section>
+                }
+            }
+        </div>
+    </div>
+</body>
+
+@section Scripts {
+    <script src="~/js/customerDashboard.js">
+       
+   
+    </script>
+}
+</html>

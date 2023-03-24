@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "لوحة التحكم ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+    <div class="container">
+            <h2> مرحبا بك, اليك الطلبات المستلمة </h2>
+            <br />
+
+        <table class="table table-striped table-bordered" id="OrdersTable" style="width:100%">
+            <thead>
+                <tr>
+                    <th>رقم الطلب</th>
+                    <th>رقم الرحلة</th>
+                    <th> تاريخ الطلب </th>
+                    <th>حالة الطلب</th>
+                    <th>المبلغ الكلي</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @*<tr>
+                    <td>#124</td>
+                    <td>Jane Smith</td>
+                    <td>$75</td>
+                    <td>01/02/2022</td>
+                    <td>Approved</td>
+                    <td>
+                    <button class="btn btn-danger btn-sm">Cancel</button>
+                    <button class="btn btn-danger btn-sm">Decline</button>
+                    </td>
+                        </tr>*@
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+@section Scripts {
+    <script src="/js/admindashboard.js"></script>
+}

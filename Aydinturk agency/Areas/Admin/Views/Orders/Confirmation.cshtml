@@ -1,0 +1,97 @@
+﻿@using Aydinturk_agency.Utils
+@model Aydinturk_agency.Models.ViewModels.OrderDetailsVM
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<body>
+    <div class="container">
+        <h2 class="text-center">تأكيد الحجز</h2>
+        <div class="row justify-content-center mt-3">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">رقم الطلب : @Model.OrderHeader.Id </li>
+                            <li class="list-group-item">اسم المشترك : @Model.OrderdBy </li>
+                            <li class="list-group-item">رقم الهاتف : @Model.OrderHeader.PhoneNumber </li>
+                            <li class="list-group-item">رقم الرحلة :  @Model.OrderHeader.FlightId</li>
+                            <li class="list-group-item">تاريخ الطلب : @Model.OrderHeader.OrderDate</li>
+                            <li class="list-group-item">حالة الطلب :  @Model.OrderHeader.OrderStatus</li>
+                        </ul>
+                        <hr />
+                        <h5 class="card-title">المقاعد</h5>
+
+                        @{
+                            string getLableString(string str)
+                            {
+                                if (str == "adult")
+                                {
+                                    return "بالغين";
+                                }
+                                else if (str == "kid")
+                                {
+                                    return "اطفال";
+                                }
+                                else
+                                {
+                                    return "رضع";
+                                }
+                            }
+                        }
+                        @foreach (var record in Model.OrderDetails)
+                        {
+                            <h6 class="card-title mt-2">@getLableString(record.AgeCategory) </h6>
+
+                            <div class="d-flex border-none p-2 rounded-1" style="flex-wrap: wrap;background:#f0f0f0;">
+                                <div class="w-50  p-2">الأسم : @record.FullName</div>
+                                <div class="w-50  p-2">الجنس : @record.Gender</div>
+                                <div class="w-50  p-2">البلد : @record.Country</div>
+                                <div class="w-50  p-2">رقم الجواز : @record.PassportNumber</div>
+                                <div class="w-50  p-2">تاريخ الميلاد : @record.yearOfBirth</div>
+                            </div>
+                        }
+
+                        </>
+                        <div class="mt-4">
+                            <div class="row justify-content-between">
+                                <div class="col"><p>السعر الكلي : @Model.OrderHeader.OrderTotal.ToString("c")</p></div>
+                                <div class="col" style="display:flex;justify-content:flex-end;gap:1rem;">
+                                        <button type="submit" name="Approved" class="btn btn-primary" onclick="ValidateConfirm(this)">تأكيد</button>
+                                        <button type="submit" name="Rejected" class="btn btn-danger"  onclick="ValidateConfirm(this)">رفض</button>
+                                    <form method="post" id="approvmentForm">
+                                        <input type="hidden" name="id" value="@Model.OrderHeader.Id" />
+                                        <input type="hidden" name="actionStatus" value="" id="actionStatus" />
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    function ValidateConfirm(e) {
+        var action = document.querySelector("#actionStatus");
+        var form = document.querySelector("#approvmentForm");
+        if(e.name == "Approved") {
+          action.value = "تمت الموافقة";
+        } else if(e.name == "Rejected") {
+          action.value = e.name;
+        }
+
+        if(action.value) {
+            console.log(action.value)
+            form.submit();
+        }
+    }
+</script>

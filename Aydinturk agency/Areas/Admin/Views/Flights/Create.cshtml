@@ -1,0 +1,107 @@
+﻿@model Aydinturk_agency.Models.ViewModels.FlightVM
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-3">
+
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-4 pt-3 ">
+            <h4>اضافة رحلة جديدة</h4>
+            <hr />
+            <form asp-action="Create">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="@Model.Flight.CompanyId" class="control-label"></label>
+                    <select asp-for="@Model.Flight.CompanyId" class="form-control" asp-items="@Model.Companies">
+                         <option selected disabled>--- اختر شركة ---</option>
+                    </select>
+                    <span asp-validation-for="@Model.Flight.CompanyId" class="text-danger"></span>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label asp-for="@Model.Flight.FromId" class="control-label"></label>
+                        <select asp-for="@Model.Flight.FromId" class="form-control" asp-items="@Model.From">
+                            <option selected disabled>--- اختر وجهة البداية ---</option>
+                        </select>
+                        <span asp-validation-for="@Model.Flight.FromId" class="text-danger"></span>
+                    </div>
+                    <div class="col">
+                        <label asp-for="@Model.Flight.ToId" class="control-label"></label>
+                        <select asp-for="@Model.Flight.ToId" class="form-control" asp-items="@Model.To">
+                            <option selected disabled>--- اختر وجهة النهاية ---</option>
+                        </select>
+                        <span asp-validation-for="@Model.Flight.ToId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Flight.Price" class="control-label"></label>
+                    <input asp-for="@Model.Flight.Price" class="form-control" />
+                    <span asp-validation-for="@Model.Flight.Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Flight.PriceForKid" class="control-label"></label>
+                    <input asp-for="@Model.Flight.PriceForKid" class="form-control" />
+                    <span asp-validation-for="@Model.Flight.PriceForKid" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Flight.PriceForBaby" class="control-label"></label>
+                    <input asp-for="@Model.Flight.PriceForBaby" class="form-control" />
+                    <span asp-validation-for="@Model.Flight.PriceForBaby" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label asp-for="@Model.Flight.Date" class="control-label"></label>
+                        <input asp-for="@Model.Flight.Date" class="form-control" />
+                        <span asp-validation-for="@Model.Flight.Date" class="text-danger"></span>
+                    </div>
+
+                    <div class="col">
+                        <label asp-for="@Model.Flight.Time" class="control-label"></label>
+                        <input asp-for="@Model.Flight.Time" class="form-control" />
+                        <span asp-validation-for="@Model.Flight.Time" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="@Model.Flight.Sets" class="control-label"></label>
+                    <input asp-for="@Model.Flight.Sets" class="form-control" />
+                    <span asp-validation-for="@Model.Flight.Sets" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Flight.Weight" class="control-label"></label>
+                    <input value="25" asp-for="@Model.Flight.Weight" class="form-control" />
+                    <span asp-validation-for="@Model.Flight.Weight" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Flight.Category" class="control-label"></label>
+                    <input value="اقتصادي" asp-for="@Model.Flight.Category" class="form-control" />
+                    <span asp-validation-for="@Model.Flight.Category" class="text-danger"></span>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <div>
+                        <a asp-action="Index" class="btn btn-secondary"> رجوع</a>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="حفظ" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+}
+}

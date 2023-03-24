@@ -1,0 +1,774 @@
+﻿++Solution 'Aydinturk agency' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:Aydinturk agency.sln
+++Script Documents
+++sweetalert2@11
+++jquery.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery\dist\jquery.min.js
+++bootstrap.bundle.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.min.js
+++site.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\site.js
+++jquery.dataTables.min.js
+++toastr.min.js
+++Login
+++jquery.validate.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++aspnetcore-browser-refresh.js
+++browserLink
+++Aydinturk agency
+i:{00000000-0000-0000-0000-000000000000}:Aydinturk agency
+++Connected Services 
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1383
+++Dependencies
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1382
+++Properties
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\properties\
+++wwwroot
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\
+++Areas
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\
+++Admin
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\
+++Controllers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\controllers\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\controllers\
+++Views
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\views\
+++Accounts
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\accounts\
+++Companies
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\companies\
+++Destinations
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\destinations\
+++Flights
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\flights\
+++Home
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\home\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\views\home\
+++Index.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\home\index.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\accounts\index.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\companies\index.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\destinations\index.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\flights\index.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\views\home\index.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\index.cshtml
+++_ViewImports.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\_viewimports.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\_viewimports.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\_viewimports.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\_viewimports.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\_viewstart.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\_viewstart.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\_viewstart.cshtml
+++Customer
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\
+++Identity
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\
+++Data
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\
+++Models
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\
+++ViewModels
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\
+++ApplicationUser.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\applicationuser.cs
+++Company.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\company.cs
+++Destination.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\destination.cs
+++ErrorViewModel.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\errorviewmodel.cs
+++Flight.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\flight.cs
+++OrderDetails.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\orderdetails.cs
+++OrderHeader.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\orderheader.cs
+++Utils
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\utils\
+++Shared
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\shared\
+++_Layout.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\shared\_layout.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\_layout.cshtml
+++_LoginPartial.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\shared\_loginpartial.cshtml
+++_Notifications.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\shared\_notifications.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\shared\_validationscriptspartial.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\shared\error.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\error.cshtml
+++appsettings.json
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\appsettings.json
+++Program.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\program.cs
+++ScaffoldingReadMe.txt
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\scaffoldingreadme.txt
+++No service dependencies discovered
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1384
+++Analyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:analyzers
+++Frameworks
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:frameworks
+++Packages
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:packages
+++launchSettings.json
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\properties\launchsettings.json
+++assets
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\
+++css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\css\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\css\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\css\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\css\
+++images
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\images\
+++js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\js\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\js\
+++lib
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\
+++favicon.ico
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\favicon.ico
+++AccountsController.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\controllers\accountscontroller.cs
+++CompaniesController.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\controllers\companiescontroller.cs
+++DestinationsController.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\controllers\destinationscontroller.cs
+++FlightsController.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\controllers\flightscontroller.cs
+++HomeController.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\controllers\homecontroller.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\controllers\homecontroller.cs
+++OrdersController.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\controllers\orderscontroller.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\controllers\orderscontroller.cs
+++Edit.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\accounts\edit.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\companies\edit.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\destinations\edit.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\flights\edit.cshtml
+++Create.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\companies\create.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\destinations\create.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\flights\create.cshtml
+++Pages
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\
+++Migrtions
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\
+++ApplicationDbContext.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\applicationdbcontext.cs
+++CustomerDashboardVM.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\customerdashboardvm.cs
+++EditAccountVM.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\editaccountvm.cs
+++FlightVM.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\flightvm.cs
+++OrderStep1VM.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\orderstep1vm.cs
+++OrderStep2VM .cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\orderstep2vm .cs
+++ProfileVM.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\profilevm.cs
+++ReservationRequest.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\reservationrequest.cs
+++ReservationVM.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\reservationvm.cs
+++EmailSender.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\utils\emailsender.cs
+++GetTime.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\utils\gettime.cs
+++SD.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\utils\sd.cs
+++_Layout.cshtml.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\appsettings.development.json
+++MessagePackAnalyzer
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\users\msi\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\users\msi\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\users\msi\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\users\msi\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\microsoft.netcore.app
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.10)
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1408
+++Microsoft.AspNetCore.Identity.UI (6.0.10)
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1411
+++Microsoft.EntityFrameworkCore (6.0.10)
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1405
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.10)
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1406
+++Microsoft.EntityFrameworkCore.Tools (6.0.10)
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1409
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.10)
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1410
+++Swashbuckle.AspNetCore (6.3.0)
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:>1407
+++img
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\
+++scss
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\scss\
+++vendor
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\
+++bootswatch.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\css\bootswatch.css
+++site.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\css\site.css
+++companies
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\images\companies\
+++accounts.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\accounts.js
+++admindashboard.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\admindashboard.js
+++companies.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\companies.js
+++destinations.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\destinations.js
+++flights.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\flights.js
+++StepOneValidation.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\steponevalidation.js
+++userOrders.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\js\userorders.js
+++jquery
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery\
+++jquery-validation
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation-unobtrusive\
+++Orders
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\views\orders\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\orders\
+++Account
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\
+++20221016071939_initdb.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221016071939_initdb.cs
+++20221017075251_add-company.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221017075251_add-company.cs
+++20221017075712_rm-company-desc.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221017075712_rm-company-desc.cs
+++20221017075908_company-desc-nullable.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221017075908_company-desc-nullable.cs
+++20221017104148_company-img-nullabl.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221017104148_company-img-nullabl.cs
+++20221018073629_add-destination.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221018073629_add-destination.cs
+++20221019132026_flight-rels-api.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221019132026_flight-rels-api.cs
+++20221019132205_edit-flight.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221019132205_edit-flight.cs
+++20221020082011_change-date-tostring.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221020082011_change-date-tostring.cs
+++20221020082145_change-time-tostring.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221020082145_change-time-tostring.cs
+++20221023100351_addIdentityToDb.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221023100351_addidentitytodb.cs
+++20221023103547_extendIdentityUser.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221023103547_extendidentityuser.cs
+++20221115075327_add-ac-balance.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221115075327_add-ac-balance.cs
+++20221115081538_addblance.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221115081538_addblance.cs
+++20221115084355_addKidsPrice.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221115084355_addkidsprice.cs
+++20221126102329_add-orders.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221126102329_add-orders.cs
+++20221126103343_updateOrders.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221126103343_updateorders.cs
+++20221130090158_remove-phonenumber.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221130090158_remove-phonenumber.cs
+++20221202194849_formatDate.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221202194849_formatdate.cs
+++20221203055958_chageOrderDateToStr.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221203055958_chageorderdatetostr.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\applicationdbcontextmodelsnapshot.cs
+++style.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\css\style.css
+++parteners
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\parteners\
+++apple-touch-icon.png
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\apple-touch-icon.png
+++cta-bg.jpg
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\cta-bg.jpg
+++logo.jpeg
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\logo.jpeg
+++travel.png
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\travel.png
+++main.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\js\main.js
+++Readme.txt
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\scss\readme.txt
+++aos
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\aos\
+++bootstrap
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\
+++bootstrap-icons
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap-icons\
+++boxicons
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\
+++glightbox
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\
+++isotope-layout
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\isotope-layout\
+++php-email-form
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\php-email-form\
+++remixicon
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\
+++swiper
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\swiper\
+++waypoints
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\waypoints\
+++a3ad5031-06d5-4ff6-a26e-34630f68a04a.png
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\images\companies\a3ad5031-06d5-4ff6-a26e-34630f68a04a.png
+++dist
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery\dist\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation\dist\
+++LICENSE.txt
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery\license.txt
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation\license.md
+++dashboard.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\views\home\dashboard.cshtml
+++GetOrders.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\views\orders\getorders.cshtml
+++StepOne.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\views\orders\stepone.cshtml
+++StepTwo.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\customer\views\orders\steptwo.cshtml
+++Manage
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\
+++_StatusMessage.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\_statusmessage.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\_statusmessage.cshtml
+++AccessDenied.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\accessdenied.cshtml
+++ConfirmEmail.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\confirmemail.cshtml
+++ConfirmEmailChange.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\confirmemailchange.cshtml
+++ExternalLogin.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\externallogin.cshtml
+++ForgotPassword.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\forgotpassword.cshtml
+++ForgotPasswordConfirmation.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\forgotpasswordconfirmation.cshtml
+++Lockout.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\lockout.cshtml
+++Login.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\login.cshtml
+++LoginWith2fa.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\loginwith2fa.cshtml
+++LoginWithRecoveryCode.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\loginwithrecoverycode.cshtml
+++Logout.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\logout.cshtml
+++Register.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\register.cshtml
+++RegisterConfirmation.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\registerconfirmation.cshtml
+++ResendEmailConfirmation.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\resendemailconfirmation.cshtml
+++ResetPassword.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\resetpassword.cshtml
+++ResetPasswordConfirmation.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\resetpasswordconfirmation.cshtml
+++Error.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\error.cshtml.cs
+++20221016071939_initdb.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221016071939_initdb.designer.cs
+++20221017075251_add-company.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221017075251_add-company.designer.cs
+++20221017075712_rm-company-desc.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221017075712_rm-company-desc.designer.cs
+++20221017075908_company-desc-nullable.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221017075908_company-desc-nullable.designer.cs
+++20221017104148_company-img-nullabl.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221017104148_company-img-nullabl.designer.cs
+++20221018073629_add-destination.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221018073629_add-destination.designer.cs
+++20221019132026_flight-rels-api.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221019132026_flight-rels-api.designer.cs
+++20221019132205_edit-flight.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221019132205_edit-flight.designer.cs
+++20221020082011_change-date-tostring.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221020082011_change-date-tostring.designer.cs
+++20221020082145_change-time-tostring.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221020082145_change-time-tostring.designer.cs
+++20221023100351_addIdentityToDb.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221023100351_addidentitytodb.designer.cs
+++20221023103547_extendIdentityUser.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221023103547_extendidentityuser.designer.cs
+++20221115075327_add-ac-balance.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221115075327_add-ac-balance.designer.cs
+++20221115081538_addblance.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221115081538_addblance.designer.cs
+++20221115084355_addKidsPrice.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221115084355_addkidsprice.designer.cs
+++20221126102329_add-orders.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221126102329_add-orders.designer.cs
+++20221126103343_updateOrders.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221126103343_updateorders.designer.cs
+++20221130090158_remove-phonenumber.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221130090158_remove-phonenumber.designer.cs
+++20221202194849_formatDate.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221202194849_formatdate.designer.cs
+++20221203055958_chageOrderDateToStr.Designer.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\data\migrtions\20221203055958_chageorderdatetostr.designer.cs
+++emarat.png
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\parteners\emarat.png
+++flybaghdad.jpg
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\parteners\flybaghdad.jpg
+++iraqia.png
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\parteners\iraqia.png
+++Kuwait.png
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\parteners\kuwait.png
+++logo.png
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\parteners\logo.png
+++qataria.png
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\img\parteners\qataria.png
+++aos.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\aos\aos.css
+++aos.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\aos\aos.js
+++fonts
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap-icons\fonts\
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\fonts\
+++bootstrap-icons.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.css
+++bootstrap-icons.json
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.json
+++index.html
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap-icons\index.html
+++isotope.pkgd.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\isotope-layout\isotope.pkgd.js
+++validate.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\php-email-form\validate.js
+++remixicon.eot
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\remixicon.eot
+++remixicon.less
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\remixicon.less
+++remixicon.svg
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\remixicon.svg
+++remixicon.symbol.svg
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\remixicon.symbol.svg
+++remixicon.ttf
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\remixicon.ttf
+++remixicon.woff
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\remixicon.woff
+++remixicon.woff2
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\remixicon.woff2
+++swiper-bundle.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\swiper\swiper-bundle.min.css
+++swiper-bundle.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\swiper\swiper-bundle.min.js
+++noframework.waypoints.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\waypoints\noframework.waypoints.js
+++jquery.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.unobtrusive.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++_ManageNav.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\_managenav.cshtml
+++ChangePassword.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\changepassword.cshtml
+++DeletePersonalData.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\deletepersonaldata.cshtml
+++Disable2fa.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\disable2fa.cshtml
+++DownloadPersonalData.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\downloadpersonaldata.cshtml
+++Email.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\email.cshtml
+++EnableAuthenticator.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\enableauthenticator.cshtml
+++ExternalLogins.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\externallogins.cshtml
+++GenerateRecoveryCodes.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\generaterecoverycodes.cshtml
+++ManageNavPages.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\managenavpages.cs
+++PersonalData.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\personaldata.cshtml
+++ResetAuthenticator.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\resetauthenticator.cshtml
+++SetPassword.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\setpassword.cshtml
+++ShowRecoveryCodes.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\showrecoverycodes.cshtml
+++TwoFactorAuthentication.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\twofactorauthentication.cshtml
+++AccessDenied.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\accessdenied.cshtml.cs
+++ConfirmEmail.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\confirmemail.cshtml.cs
+++ConfirmEmailChange.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\confirmemailchange.cshtml.cs
+++ExternalLogin.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\externallogin.cshtml.cs
+++ForgotPassword.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\forgotpassword.cshtml.cs
+++ForgotPasswordConfirmation.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\forgotpasswordconfirmation.cshtml.cs
+++Lockout.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\lockout.cshtml.cs
+++Login.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\login.cshtml.cs
+++LoginWith2fa.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\loginwith2fa.cshtml.cs
+++LoginWithRecoveryCode.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\loginwithrecoverycode.cshtml.cs
+++Logout.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\logout.cshtml.cs
+++Register.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\register.cshtml.cs
+++RegisterConfirmation.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\registerconfirmation.cshtml.cs
+++ResendEmailConfirmation.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\resendemailconfirmation.cshtml.cs
+++ResetPassword.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\resetpassword.cshtml.cs
+++ResetPasswordConfirmation.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\resetpasswordconfirmation.cshtml.cs
+++bootstrap.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap.css
+++bootstrap-grid.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.css
+++bootstrap.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.js
+++bootstrap-icons.woff
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff
+++bootstrap-icons.woff2
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2
+++animations.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\css\animations.css
+++boxicons.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\css\boxicons.css
+++transformations.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\css\transformations.css
+++boxicons.eot
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\fonts\boxicons.eot
+++boxicons.svg
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\fonts\boxicons.svg
+++boxicons.ttf
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\fonts\boxicons.ttf
+++boxicons.woff
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\fonts\boxicons.woff
+++boxicons.woff2
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\fonts\boxicons.woff2
+++glightbox.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\css\glightbox.css
+++plyr.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\css\plyr.css
+++glightbox.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\js\glightbox.js
+++isotope.pkgd.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\isotope-layout\isotope.pkgd.min.js
+++remixicon.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\remixicon\remixicon.css
+++swiper-bundle.min.js.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\swiper\swiper-bundle.min.js.map
+++additional-methods.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++ChangePassword.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\changepassword.cshtml.cs
+++DeletePersonalData.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\deletepersonaldata.cshtml.cs
+++Disable2fa.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\disable2fa.cshtml.cs
+++DownloadPersonalData.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\downloadpersonaldata.cshtml.cs
+++Email.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\email.cshtml.cs
+++EnableAuthenticator.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\enableauthenticator.cshtml.cs
+++ExternalLogins.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\externallogins.cshtml.cs
+++GenerateRecoveryCodes.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\generaterecoverycodes.cshtml.cs
+++Index.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\index.cshtml.cs
+++PersonalData.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\personaldata.cshtml.cs
+++ResetAuthenticator.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\resetauthenticator.cshtml.cs
+++SetPassword.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\setpassword.cshtml.cs
+++ShowRecoveryCodes.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\showrecoverycodes.cshtml.cs
+++TwoFactorAuthentication.cshtml.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\identity\pages\account\manage\twofactorauthentication.cshtml.cs
+++bootstrap.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap.css.map
+++bootstrap.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.js.map
+++bootstrap.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js
+++boxicons.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\boxicons\css\boxicons.min.css
+++glightbox.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\css\glightbox.min.css
+++plyr.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\css\plyr.min.css
+++glightbox.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\glightbox\js\glightbox.min.js
+++jquery.min.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.js.map
+++bootstrap.esm.js.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map
+++VM5
+++home
+++OrderDetailsVM.cs
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\models\viewmodels\orderdetailsvm.cs
+++Confirmation.cshtml
+i:{564f72be-646c-4907-9cb2-862c8676e1a1}:e:\aydinturk agency\aydinturk agency\areas\admin\views\orders\confirmation.cshtml
+++36
+++jquery-3.2.1.slim.min.js
+++popper.min.js
+++accounts
+++VM37
+++VM48
+++VM49
+++VM50
+++VM51
+++VM52
+++VM53
+++VM54
+++VM55
+++VM56
+++VM57
+++VM58
+++VM59
+++VM60
+++VM61
+++VM62
+++VM63
+++VM64
+++VM65
+++VM66
+++VM67
+++VM68
+++VM69
+++VM70
+++VM71
+++VM72
+++VM73

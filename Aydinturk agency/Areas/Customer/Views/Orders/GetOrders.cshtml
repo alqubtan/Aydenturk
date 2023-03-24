@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Aydinturk_agency.Models.OrderHeader>
+
+@{
+    ViewData["Title"] = "قائمة الطلبات";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container p-3">
+
+
+    <div class="row p-4">
+        <div class="col-6">
+            <h2>قائمة الطلبات السابقة</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a href="/Customer" class="btn btn-primary">
+                <i class="bi bi-plus-square"></i> &nbsp; اضافة طلب جديد
+            </a>
+        </div>
+    </div>
+    <br /> <br /> <br />
+    <table class="table table-striped table-bordered" id="UserOrdersTable" style="width:100%">
+        <thead>
+            <tr>
+                <th>رقم الطلب</th>
+                <th>رقم الرحلة</th>
+                <th> تاريخ الطلب </th>
+                <th>حالة الطلب</th>
+                <th>المبلغ الكلي</th>
+            </tr>
+        </thead>
+
+        <tbody>
+             
+        </tbody>
+    </table>
+
+</div>
+
+@section Scripts {
+<script src="~/js/userOrders.js"></script>
+}

@@ -1,0 +1,37 @@
+﻿@using Aydinturk_agency.Utils
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor httpContextAccessor
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        
+
+        <li class="nav-item">
+            <a id="manage" class="nav-link">مرحباً @httpContextAccessor.HttpContext.Session.GetString("fullName") 👋!</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link bg-info">
+                رصيد الحساب
+                @httpContextAccessor.HttpContext.Session.GetString("accountBalance")
+            </a>
+
+
+
+        </li>
+        
+        <li class="nav-item">
+            <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button id="logout" type="submit" class="nav-link btn btn-link">تسجيل خروج</button>
+            </form>
+        </li>
+        
+    }
+    
+</ul>
+
+
+

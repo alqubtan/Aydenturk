@@ -1,0 +1,53 @@
+﻿@model Aydinturk_agency.Models.Company
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-3">
+
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-4 pt-3 ">
+            <h4>تعديل شركة رقم (@Model.Id)</h4>
+            <hr />
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <input type="hidden" value="@Model.Id" asp-for="Id" />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control" rows="3" class="form-control"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ImageUrl" class="control-label">في حال عدم اختيار صورة جديدة سيتم ابقاء الصورة الاصلية</label>
+                    <input asp-for="ImageUrl" name="file" id=uploadImage type="file" class="form-control" />
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <div>
+                        <a asp-action="Index" class="btn btn-secondary"> رجوع</a>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" onclick = "" value="حفظ" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+   
+}
+}
+

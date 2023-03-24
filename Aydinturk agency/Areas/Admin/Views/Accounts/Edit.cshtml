@@ -1,0 +1,64 @@
+﻿@model Aydinturk_agency.Models.ApplicationUser
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-3">
+
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-4 pt-3 ">
+            <h4>تعديل معلومات الحساب (@Model.Email)</h4>
+            <hr />
+            <form asp-action="Edit">
+                <input type="hidden" value="@Model.Id" asp-for="Id" />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="FullName" class="control-label">اسم الحساب</label>
+                    <input asp-for="FullName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="AccountBalance" class="control-label">الرصيد(دولار)</label>
+                    <input asp-for="AccountBalance" class="form-control" />
+                    <span asp-validation-for="AccountBalance" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNumber" class="control-label">رقم الهاتف</label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">البريد الالكتروني</label>
+                    <input asp-for="Email" class="form-control" />
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="Location" class="control-label">العنوان</label>
+                    <input asp-for="Location" class="form-control" />
+
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <div>
+                        <a asp-action="Index" class="btn btn-secondary"> رجوع</a>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" onclick="" value="حفظ" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+}
+}
+

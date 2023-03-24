@@ -1,0 +1,830 @@
+﻿@model Aydinturk_agency.Models.ViewModels.OrderStep2VM
+@{
+    ViewData["Title"] = " معلومات الحجز 1   ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-lg">
+    <div class="containing-alert">
+    </div>
+    <div class="card text-center border border-secondary">
+        <h5 class="card-header bg-primary text-white">معلومات الحجز</h5>
+        <div class="card-body card-con">
+            <div class="table-responsive-xxl">
+                <table class="table caption-top text-center table-striped">
+                    <caption class="text-center font-m6">تفاصيل الرحلة</caption>
+                    <tbody>
+                        <tr>
+                            <td>@Model.Flight.Company.Name</td>
+                            <td>@Model.Flight.From.Name</td>
+                            <td>⬅</td>
+                            <td>@Model.Flight.To.Name</td>
+                            <td>@Model.Flight.Price.ToString("c")</td>
+                            <td>Economy</td>
+                            <td>@Model.Flight.Sets</td>
+                            <td>@Model.Flight.Date</td>
+                            <td>@Model.Flight.Time</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            @if (Model.ErrorMSG != null)
+            {
+                {
+
+                    <div class="alert alert-danger" role="alert">
+                        @Model.ErrorMSG
+                    </div>
+
+                    <a href="/Customer/Home" class="btn btn-secondary px-5 fw-bold">رجوع</a>
+                }
+
+            }
+            else
+            {
+                <div class="card-body">
+                    @for (var res = 0; res < Model.AdultReservations; res++)
+                    {
+                        <div class="card mb-3" id="Records" id="adultRecords">
+                            <div class="card-body">
+                                <div class="row g-3 mb-3 justify-content-center" style="direction: rtl;">
+                                    <div class="col-md-1">
+                                        <p class="mb-0 mt-4"><span>@(res + 1)</span>. <span class="fw-bold">البالغين</span></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="form-label">الاسم</label>
+                                        <input type="text" name="FullName" required class="form-control form-control-sm upper" placeholder="الاسم" required>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label class="form-label">الجنس</label>
+                                        <select name="Gender" class="form-select form-select-sm" aria-label="Default select example">
+                                            <option value="ذكر">ذكر</option>
+                                            <option value="انثى">انثى</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <label class="form-label">تاريخ الميلاد</label>
+                                        <input type="text" name="YearOfBirth" class="form-control form-control-sm js-date--west datee datepicker hasDatepicker" placeholder="--/--/----" required="" autocomplete="off" id="dp1669446730290">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="form-label">رقم الجواز</label>
+                                        <input type="text" name="PassportNumber" class="form-control form-control-sm upper" placeholder="رقم الجواز" required="">
+                                    </div>
+                                    <input type="hidden" name="AgeCategory" value="adult" />
+                                    <div class="col-md-2">
+                                        <label class="form-label">الدولة</label>
+                                        <select name="Country" class="form-select form-select-sm" aria-label=".form-select-sm example" required="">
+                                            <option>Afghanistan</option>
+                                            <option>Albania</option>
+                                            <option>Algeria</option>
+                                            <option>Andorra</option>
+                                            <option>Angola</option>
+                                            <option>Argentina</option>
+                                            <option>Armenia</option>
+                                            <option>Australia</option>
+                                            <option>Austria</option>
+                                            <option>Azerbaijan</option>
+                                            <option>Bahrain</option>
+                                            <option>Bangladesh</option>
+                                            <option>Barbados</option>
+                                            <option>Belarus</option>
+                                            <option>Belgium</option>
+                                            <option>Belize</option>
+                                            <option>Benin</option>
+                                            <option>Bhutan</option>
+                                            <option>Bolivia</option>
+                                            <option>Botswana</option>
+                                            <option>Brazil</option>
+                                            <option>Brunei</option>
+                                            <option>Bulgaria</option>
+                                            <option>Burkina Faso</option>
+                                            <option>Burundi</option>
+                                            <option>Cambodia</option>
+                                            <option>Cameroon</option>
+                                            <option>Canada</option>
+                                            <option>Cape Verde</option>
+                                            <option>Chad</option>
+                                            <option>Chile</option>
+                                            <option>China</option>
+                                            <option>Colombia</option>
+                                            <option>Comoros</option>
+                                            <option>Costa Rica</option>
+                                            <option>Cote d’Ivoire</option>
+                                            <option>Croatia</option>
+                                            <option>Cuba</option>
+                                            <option>Cyprus</option>
+                                            <option>Czech Republic</option>
+                                            <option>Denmark</option>
+                                            <option>Djibouti</option>
+                                            <option>Dominica</option>
+                                            <option>Dominican Republic</option>
+                                            <option>East Timor</option>
+                                            <option>Ecuador</option>
+                                            <option>Egypt</option>
+                                            <option>El Salvador</option>
+                                            <option>Equatorial Guinea</option>
+                                            <option>Eritrea</option>
+                                            <option>Estonia</option>
+                                            <option>Ethiopia</option>
+                                            <option>Finland</option>
+                                            <option>France</option>
+                                            <option>Gabon</option>
+                                            <option>The Gambia</option>
+                                            <option>Georgia</option>
+                                            <option>Germany</option>
+                                            <option>Ghana</option>
+                                            <option>Greece</option>
+                                            <option>Grenada</option>
+                                            <option>Guatemala</option>
+                                            <option>Guinea</option>
+                                            <option>Guinea Bissau</option>
+                                            <option>Guyana</option>
+                                            <option>Haiti</option>
+                                            <option>Honduras</option>
+                                            <option>Hungary</option>
+                                            <option>Iceland</option>
+                                            <option>India</option>
+                                            <option>Indonesia</option>
+                                            <option>Iran</option>
+                                            <option selected="">Iraq</option>
+                                            <option>Ireland</option>
+                                            <option>Israel</option>
+                                            <option>Italy</option>
+                                            <option>Jamaica</option>
+                                            <option>Japan</option>
+                                            <option>Jordan</option>
+                                            <option>Kazakhstan</option>
+                                            <option>Kenya</option>
+                                            <option>Kiribati</option>
+                                            <option>Korea, North</option>
+                                            <option>Korea, South</option>
+                                            <option>Kuwait</option>
+                                            <option>Kyrgyzstan</option>
+                                            <option>Laos</option>
+                                            <option>Latvia</option>
+                                            <option>Lebanon</option>
+                                            <option>Lesotho</option>
+                                            <option>Liberia</option>
+                                            <option>Libya</option>
+                                            <option>Liechtenstein</option>
+                                            <option>Lithuania</option>
+                                            <option>Luxembourg</option>
+                                            <option>Macedonia</option>
+                                            <option>Madagascar</option>
+                                            <option>Malawi</option>
+                                            <option>Malaysia</option>
+                                            <option>Maldives</option>
+                                            <option>Mali</option>
+                                            <option>Malta</option>
+                                            <option>Marshall Islands</option>
+                                            <option>Mauritania</option>
+                                            <option>Mauritius</option>
+                                            <option>Mexico</option>
+                                            <option>Moldova</option>
+                                            <option>Monaco</option>
+                                            <option>Mongolia</option>
+                                            <option>Montenegro</option>
+                                            <option>Morocco</option>
+                                            <option>Mozambique</option>
+                                            <option>Myanmar </option>
+                                            <option>Namibia</option>
+                                            <option>Nauru</option>
+                                            <option>Nepal</option>
+                                            <option>Netherlands</option>
+                                            <option>New Zealand</option>
+                                            <option>Nicaragua</option>
+                                            <option>Niger</option>
+                                            <option>Nigeria</option>
+                                            <option>Norway</option>
+                                            <option>Oman</option>
+                                            <option>Pakistan</option>
+                                            <option>Palau</option>
+                                            <option>Panama</option>
+                                            <option>Paraguay</option>
+                                            <option>Peru</option>
+                                            <option>Philippines</option>
+                                            <option>Poland</option>
+                                            <option>Portugal</option>
+                                            <option>Qatar</option>
+                                            <option>Romania</option>
+                                            <option>Russia</option>
+                                            <option>Rwanda</option>
+                                            <option>Samoa</option>
+                                            <option>San Marino</option>
+                                            <option>Saudi Arabia</option>
+                                            <option>Senegal</option>
+                                            <option>Serbia</option>
+                                            <option>Seychelles</option>
+                                            <option>Sierra Leone</option>
+                                            <option>Singapore</option>
+                                            <option>Slovakia</option>
+                                            <option>Slovenia</option>
+                                            <option>Solomon Islands</option>
+                                            <option>Somalia</option>
+                                            <option>South Africa</option>
+                                            <option>Spain</option>
+                                            <option>Sri Lanka</option>
+                                            <option>Sudan</option>
+                                            <option>Suriname</option>
+                                            <option>Swaziland</option>
+                                            <option>Sweden</option>
+                                            <option>Switzerland</option>
+                                            <option>Syria</option>
+                                            <option>Tajikistan</option>
+                                            <option>Tanzania</option>
+                                            <option>Thailand</option>
+                                            <option>Togo</option>
+                                            <option>Tonga</option>
+                                            <option>Tunisia</option>
+                                            <option>Turkey</option>
+                                            <option>Turkmenistan</option>
+                                            <option>Tuvalu</option>
+                                            <option>Uganda</option>
+                                            <option>Ukraine</option>
+                                            <option>United Arab Emirates</option>
+                                            <option>United Kingdom</option>
+                                            <option>United States</option>
+                                            <option>Uruguay</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Vanuatu</option>
+                                            <option>Venezuela</option>
+                                            <option>Vietnam</option>
+                                            <option>Yemen</option>
+                                            <option>Zambia</option>
+                                            <option>Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                    @*<div class="col-md-2">
+                                        <label class="form-label">رقم المسافر</label>
+                                        <input type="text" name="PhoneNumber" class="form-control form-control-sm upper" placeholder="رقم الهاتف" required="">
+                                        </div>*@
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    }
+
+
+                    @for (var res = 0; res < Model.KidsReservations; res++)
+                    {
+                        <div class="card mb-3" id="Records" id="kidsRecords">
+                            <div class="card-body">
+                                <div class="row g-3 mb-3 justify-content-center" style="direction: rtl;">
+                                    <div class="col-md-1">
+                                        <p class="mb-0 mt-4"><span>@(res + 1)</span>. <span class="fw-bold">الاطفال</span></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="form-label">الاسم</label>
+                                        <input type="text" name="FullName" class="form-control form-control-sm upper" placeholder="الاسم" required>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label class="form-label">الجنس</label>
+                                        <select name="Gender" class="form-select form-select-sm" aria-label="Default select example">
+                                            <option value="ذكر">ذكر</option>
+                                            <option value="انثى">انثى</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <label class="form-label">تاريخ الميلاد</label>
+                                        <input type="text" name="YearOfBirth" class="form-control form-control-sm js-date--west datee datepicker hasDatepicker" placeholder="--/--/----" required="" autocomplete="off" id="dp1669446730290">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="form-label">رقم الجواز</label>
+                                        <input type="text" name="PassportNumber" class="form-control form-control-sm upper" placeholder="رقم الجواز" required="">
+                                    </div>
+                                    <input type="hidden" name="AgeCategory" value="kid" />
+                                    <div class="col-md-2">
+                                        <label class="form-label">الدولة</label>
+                                        <select name="Country" class="form-select form-select-sm" aria-label=".form-select-sm example" required="">
+                                            <option>Afghanistan</option>
+                                            <option>Albania</option>
+                                            <option>Algeria</option>
+                                            <option>Andorra</option>
+                                            <option>Angola</option>
+                                            <option>Argentina</option>
+                                            <option>Armenia</option>
+                                            <option>Australia</option>
+                                            <option>Austria</option>
+                                            <option>Azerbaijan</option>
+                                            <option>Bahrain</option>
+                                            <option>Bangladesh</option>
+                                            <option>Barbados</option>
+                                            <option>Belarus</option>
+                                            <option>Belgium</option>
+                                            <option>Belize</option>
+                                            <option>Benin</option>
+                                            <option>Bhutan</option>
+                                            <option>Bolivia</option>
+                                            <option>Botswana</option>
+                                            <option>Brazil</option>
+                                            <option>Brunei</option>
+                                            <option>Bulgaria</option>
+                                            <option>Burkina Faso</option>
+                                            <option>Burundi</option>
+                                            <option>Cambodia</option>
+                                            <option>Cameroon</option>
+                                            <option>Canada</option>
+                                            <option>Cape Verde</option>
+                                            <option>Chad</option>
+                                            <option>Chile</option>
+                                            <option>China</option>
+                                            <option>Colombia</option>
+                                            <option>Comoros</option>
+                                            <option>Costa Rica</option>
+                                            <option>Cote d’Ivoire</option>
+                                            <option>Croatia</option>
+                                            <option>Cuba</option>
+                                            <option>Cyprus</option>
+                                            <option>Czech Republic</option>
+                                            <option>Denmark</option>
+                                            <option>Djibouti</option>
+                                            <option>Dominica</option>
+                                            <option>Dominican Republic</option>
+                                            <option>East Timor</option>
+                                            <option>Ecuador</option>
+                                            <option>Egypt</option>
+                                            <option>El Salvador</option>
+                                            <option>Equatorial Guinea</option>
+                                            <option>Eritrea</option>
+                                            <option>Estonia</option>
+                                            <option>Ethiopia</option>
+                                            <option>Finland</option>
+                                            <option>France</option>
+                                            <option>Gabon</option>
+                                            <option>The Gambia</option>
+                                            <option>Georgia</option>
+                                            <option>Germany</option>
+                                            <option>Ghana</option>
+                                            <option>Greece</option>
+                                            <option>Grenada</option>
+                                            <option>Guatemala</option>
+                                            <option>Guinea</option>
+                                            <option>Guinea Bissau</option>
+                                            <option>Guyana</option>
+                                            <option>Haiti</option>
+                                            <option>Honduras</option>
+                                            <option>Hungary</option>
+                                            <option>Iceland</option>
+                                            <option>India</option>
+                                            <option>Indonesia</option>
+                                            <option>Iran</option>
+                                            <option selected="">Iraq</option>
+                                            <option>Ireland</option>
+                                            <option>Israel</option>
+                                            <option>Italy</option>
+                                            <option>Jamaica</option>
+                                            <option>Japan</option>
+                                            <option>Jordan</option>
+                                            <option>Kazakhstan</option>
+                                            <option>Kenya</option>
+                                            <option>Kiribati</option>
+                                            <option>Korea, North</option>
+                                            <option>Korea, South</option>
+                                            <option>Kuwait</option>
+                                            <option>Kyrgyzstan</option>
+                                            <option>Laos</option>
+                                            <option>Latvia</option>
+                                            <option>Lebanon</option>
+                                            <option>Lesotho</option>
+                                            <option>Liberia</option>
+                                            <option>Libya</option>
+                                            <option>Liechtenstein</option>
+                                            <option>Lithuania</option>
+                                            <option>Luxembourg</option>
+                                            <option>Macedonia</option>
+                                            <option>Madagascar</option>
+                                            <option>Malawi</option>
+                                            <option>Malaysia</option>
+                                            <option>Maldives</option>
+                                            <option>Mali</option>
+                                            <option>Malta</option>
+                                            <option>Marshall Islands</option>
+                                            <option>Mauritania</option>
+                                            <option>Mauritius</option>
+                                            <option>Mexico</option>
+                                            <option>Moldova</option>
+                                            <option>Monaco</option>
+                                            <option>Mongolia</option>
+                                            <option>Montenegro</option>
+                                            <option>Morocco</option>
+                                            <option>Mozambique</option>
+                                            <option>Myanmar </option>
+                                            <option>Namibia</option>
+                                            <option>Nauru</option>
+                                            <option>Nepal</option>
+                                            <option>Netherlands</option>
+                                            <option>New Zealand</option>
+                                            <option>Nicaragua</option>
+                                            <option>Niger</option>
+                                            <option>Nigeria</option>
+                                            <option>Norway</option>
+                                            <option>Oman</option>
+                                            <option>Pakistan</option>
+                                            <option>Palau</option>
+                                            <option>Panama</option>
+                                            <option>Paraguay</option>
+                                            <option>Peru</option>
+                                            <option>Philippines</option>
+                                            <option>Poland</option>
+                                            <option>Portugal</option>
+                                            <option>Qatar</option>
+                                            <option>Romania</option>
+                                            <option>Russia</option>
+                                            <option>Rwanda</option>
+                                            <option>Samoa</option>
+                                            <option>San Marino</option>
+                                            <option>Saudi Arabia</option>
+                                            <option>Senegal</option>
+                                            <option>Serbia</option>
+                                            <option>Seychelles</option>
+                                            <option>Sierra Leone</option>
+                                            <option>Singapore</option>
+                                            <option>Slovakia</option>
+                                            <option>Slovenia</option>
+                                            <option>Solomon Islands</option>
+                                            <option>Somalia</option>
+                                            <option>South Africa</option>
+                                            <option>Spain</option>
+                                            <option>Sri Lanka</option>
+                                            <option>Sudan</option>
+                                            <option>Suriname</option>
+                                            <option>Swaziland</option>
+                                            <option>Sweden</option>
+                                            <option>Switzerland</option>
+                                            <option>Syria</option>
+                                            <option>Tajikistan</option>
+                                            <option>Tanzania</option>
+                                            <option>Thailand</option>
+                                            <option>Togo</option>
+                                            <option>Tonga</option>
+                                            <option>Tunisia</option>
+                                            <option>Turkey</option>
+                                            <option>Turkmenistan</option>
+                                            <option>Tuvalu</option>
+                                            <option>Uganda</option>
+                                            <option>Ukraine</option>
+                                            <option>United Arab Emirates</option>
+                                            <option>United Kingdom</option>
+                                            <option>United States</option>
+                                            <option>Uruguay</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Vanuatu</option>
+                                            <option>Venezuela</option>
+                                            <option>Vietnam</option>
+                                            <option>Yemen</option>
+                                            <option>Zambia</option>
+                                            <option>Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                    @* <div class="col-md-2">
+                                        <label class="form-label">رقم المسافر</label>
+                                        <input type="text" name="PhoneNumber" class="form-control form-control-sm upper" placeholder="رقم الهاتف" required="">
+                                        </div>*@
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    }
+
+
+                    @for (var res = 0; res < Model.BabyReservations; res++)
+                    {
+                        <div class="card mb-3" id="Records" id="babyRecords">
+                            <div class="card-body">
+                                <div class="row g-3 mb-3 justify-content-center" style="direction: rtl;">
+                                    <div class="col-md-1">
+                                        <p class="mb-0 mt-4"><span>@(res + 1)</span>. <span class="fw-bold">الرضع</span></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="form-label">الاسم</label>
+                                        <input type="text" name="FullName" class="form-control form-control-sm upper" placeholder="الاسم" required>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label class="form-label">الجنس</label>
+                                        <select name="Gender" class="form-select form-select-sm" aria-label="Default select example">
+                                            <option value="ذكر">ذكر</option>
+                                            <option value="انثى">انثى</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <label class="form-label">تاريخ الميلاد</label>
+                                        <input type="text" name="YearOfBirth" class="form-control form-control-sm js-date--west datee datepicker hasDatepicker" placeholder="--/--/----" required="" autocomplete="off" id="dp1669446730290">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="form-label">رقم الجواز</label>
+                                        <input type="text" name="PassportNumber" class="form-control form-control-sm upper" placeholder="رقم الجواز" required="">
+                                    </div>
+                                    <input type="hidden" name="AgeCategory" value="baby" />
+                                    <div class="col-md-2">
+                                        <label class="form-label">الدولة</label>
+                                        <select name="Country" class="form-select form-select-sm" aria-label=".form-select-sm example" required="">
+                                            <option>Afghanistan</option>
+                                            <option>Albania</option>
+                                            <option>Algeria</option>
+                                            <option>Andorra</option>
+                                            <option>Angola</option>
+                                            <option>Argentina</option>
+                                            <option>Armenia</option>
+                                            <option>Australia</option>
+                                            <option>Austria</option>
+                                            <option>Azerbaijan</option>
+                                            <option>Bahrain</option>
+                                            <option>Bangladesh</option>
+                                            <option>Barbados</option>
+                                            <option>Belarus</option>
+                                            <option>Belgium</option>
+                                            <option>Belize</option>
+                                            <option>Benin</option>
+                                            <option>Bhutan</option>
+                                            <option>Bolivia</option>
+                                            <option>Botswana</option>
+                                            <option>Brazil</option>
+                                            <option>Brunei</option>
+                                            <option>Bulgaria</option>
+                                            <option>Burkina Faso</option>
+                                            <option>Burundi</option>
+                                            <option>Cambodia</option>
+                                            <option>Cameroon</option>
+                                            <option>Canada</option>
+                                            <option>Cape Verde</option>
+                                            <option>Chad</option>
+                                            <option>Chile</option>
+                                            <option>China</option>
+                                            <option>Colombia</option>
+                                            <option>Comoros</option>
+                                            <option>Costa Rica</option>
+                                            <option>Cote d’Ivoire</option>
+                                            <option>Croatia</option>
+                                            <option>Cuba</option>
+                                            <option>Cyprus</option>
+                                            <option>Czech Republic</option>
+                                            <option>Denmark</option>
+                                            <option>Djibouti</option>
+                                            <option>Dominica</option>
+                                            <option>Dominican Republic</option>
+                                            <option>East Timor</option>
+                                            <option>Ecuador</option>
+                                            <option>Egypt</option>
+                                            <option>El Salvador</option>
+                                            <option>Equatorial Guinea</option>
+                                            <option>Eritrea</option>
+                                            <option>Estonia</option>
+                                            <option>Ethiopia</option>
+                                            <option>Finland</option>
+                                            <option>France</option>
+                                            <option>Gabon</option>
+                                            <option>The Gambia</option>
+                                            <option>Georgia</option>
+                                            <option>Germany</option>
+                                            <option>Ghana</option>
+                                            <option>Greece</option>
+                                            <option>Grenada</option>
+                                            <option>Guatemala</option>
+                                            <option>Guinea</option>
+                                            <option>Guinea Bissau</option>
+                                            <option>Guyana</option>
+                                            <option>Haiti</option>
+                                            <option>Honduras</option>
+                                            <option>Hungary</option>
+                                            <option>Iceland</option>
+                                            <option>India</option>
+                                            <option>Indonesia</option>
+                                            <option>Iran</option>
+                                            <option selected="">Iraq</option>
+                                            <option>Ireland</option>
+                                            <option>Israel</option>
+                                            <option>Italy</option>
+                                            <option>Jamaica</option>
+                                            <option>Japan</option>
+                                            <option>Jordan</option>
+                                            <option>Kazakhstan</option>
+                                            <option>Kenya</option>
+                                            <option>Kiribati</option>
+                                            <option>Korea, North</option>
+                                            <option>Korea, South</option>
+                                            <option>Kuwait</option>
+                                            <option>Kyrgyzstan</option>
+                                            <option>Laos</option>
+                                            <option>Latvia</option>
+                                            <option>Lebanon</option>
+                                            <option>Lesotho</option>
+                                            <option>Liberia</option>
+                                            <option>Libya</option>
+                                            <option>Liechtenstein</option>
+                                            <option>Lithuania</option>
+                                            <option>Luxembourg</option>
+                                            <option>Macedonia</option>
+                                            <option>Madagascar</option>
+                                            <option>Malawi</option>
+                                            <option>Malaysia</option>
+                                            <option>Maldives</option>
+                                            <option>Mali</option>
+                                            <option>Malta</option>
+                                            <option>Marshall Islands</option>
+                                            <option>Mauritania</option>
+                                            <option>Mauritius</option>
+                                            <option>Mexico</option>
+                                            <option>Moldova</option>
+                                            <option>Monaco</option>
+                                            <option>Mongolia</option>
+                                            <option>Montenegro</option>
+                                            <option>Morocco</option>
+                                            <option>Mozambique</option>
+                                            <option>Myanmar </option>
+                                            <option>Namibia</option>
+                                            <option>Nauru</option>
+                                            <option>Nepal</option>
+                                            <option>Netherlands</option>
+                                            <option>New Zealand</option>
+                                            <option>Nicaragua</option>
+                                            <option>Niger</option>
+                                            <option>Nigeria</option>
+                                            <option>Norway</option>
+                                            <option>Oman</option>
+                                            <option>Pakistan</option>
+                                            <option>Palau</option>
+                                            <option>Panama</option>
+                                            <option>Paraguay</option>
+                                            <option>Peru</option>
+                                            <option>Philippines</option>
+                                            <option>Poland</option>
+                                            <option>Portugal</option>
+                                            <option>Qatar</option>
+                                            <option>Romania</option>
+                                            <option>Russia</option>
+                                            <option>Rwanda</option>
+                                            <option>Samoa</option>
+                                            <option>San Marino</option>
+                                            <option>Saudi Arabia</option>
+                                            <option>Senegal</option>
+                                            <option>Serbia</option>
+                                            <option>Seychelles</option>
+                                            <option>Sierra Leone</option>
+                                            <option>Singapore</option>
+                                            <option>Slovakia</option>
+                                            <option>Slovenia</option>
+                                            <option>Solomon Islands</option>
+                                            <option>Somalia</option>
+                                            <option>South Africa</option>
+                                            <option>Spain</option>
+                                            <option>Sri Lanka</option>
+                                            <option>Sudan</option>
+                                            <option>Suriname</option>
+                                            <option>Swaziland</option>
+                                            <option>Sweden</option>
+                                            <option>Switzerland</option>
+                                            <option>Syria</option>
+                                            <option>Tajikistan</option>
+                                            <option>Tanzania</option>
+                                            <option>Thailand</option>
+                                            <option>Togo</option>
+                                            <option>Tonga</option>
+                                            <option>Tunisia</option>
+                                            <option>Turkey</option>
+                                            <option>Turkmenistan</option>
+                                            <option>Tuvalu</option>
+                                            <option>Uganda</option>
+                                            <option>Ukraine</option>
+                                            <option>United Arab Emirates</option>
+                                            <option>United Kingdom</option>
+                                            <option>United States</option>
+                                            <option>Uruguay</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Vanuatu</option>
+                                            <option>Venezuela</option>
+                                            <option>Vietnam</option>
+                                            <option>Yemen</option>
+                                            <option>Zambia</option>
+                                            <option>Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                    @*<div class="col-md-2">
+                                        <label class="form-label">رقم المسافر</label>
+                                        <input type="text" name="PhoneNumber" class="form-control form-control-sm upper" placeholder="رقم الهاتف" required="">
+                                        </div>*@
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    }
+
+                    <input type="hidden" id="FlightId" name="FlightId" value="@Model.Flight.Id" />
+
+                    <div class="col-md-2 m-auto my-4">
+                        <label class="form-label">رقم المسافر</label>
+                        <input type="text" id="PhoneNumber" name="PhoneNumber" class="form-control form-control-sm upper" placeholder="رقم الهاتف" required="">
+                    </div>
+
+                    <div>
+                        <button onclick="btnsubmit()" class="btn btn-primary px-5 fw-bold">تأكيد الحجز</button>
+
+                        <a href="/Customer/Home" class="btn btn-secondary px-5 fw-bold">رجوع</a>
+                    </div>
+
+
+                </div>
+            }
+
+        </div>
+
+    </div>
+</div>
+
+
+
+@section Scripts {
+
+<script type="text/javascript">
+
+    function SubmitForm(data, FlightId, PhoneNumber) {
+          $.ajax({
+              dataType: 'json',
+              url:"../Orders/Reservation",
+              type:"POST",
+              data:{data: data, FlightId:FlightId, PhoneNumber:PhoneNumber},
+              success:function(data) {
+                   if(data.success) {
+                       Swal.fire({
+                            title: 'تمت العملية بنجاح',
+                            text: data.message,
+                            icon: 'success',
+                            confirmButtonColor: '#3085d6',
+                            confirmButtonText: 'تم'
+                        }).then(result => {
+                            if (result.isConfirmed) {
+                               window.location ="/customer"
+                            }
+                        })
+                   }else {
+                       toastr.error(data.message)
+                   }
+
+              }
+
+
+          })
+
+
+     }
+
+    function btnsubmit() {
+          const FlightId = document.querySelector("#FlightId").value;
+          const PhoneNumber = document.querySelector("#PhoneNumber").value;
+          const alertContainer = document.querySelector('.containing-alert');
+
+          alertContainer.innerHTML ='';
+
+          const data = [];
+          let formIsValid = true;
+
+          document.querySelectorAll("#Records").forEach(function(r) {
+              let obj = {}
+
+              const inputs = r.querySelectorAll("input,select");
+
+              inputs.forEach(function(el) {
+                  if(el.value == '') {
+                      alertContainer.insertAdjacentHTML('afterbegin' ,
+                      `<div class="alert alert-danger text-center" role="alert"> حقل ${el.name} مطلوب</div>`)
+
+                      formIsValid = false;
+                      return;
+                  }else {
+
+                    obj[el.name] = el.value;
+                  }
+              })
+
+              if(formIsValid) {
+
+                 data.push(obj)
+              }
+
+          });
+
+          if(PhoneNumber == '') {
+               alertContainer.insertAdjacentHTML('afterbegin' ,
+               `<div class="alert alert-danger text-center" role="alert"> حقل PhoneNumber مطلوب</div>`)
+
+               formIsValid = false;
+          }
+
+          if(formIsValid == true) {
+
+            SubmitForm(data, FlightId, PhoneNumber)
+          }
+
+
+    }
+
+
+</script>
+}

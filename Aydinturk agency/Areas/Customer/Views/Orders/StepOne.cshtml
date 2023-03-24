@@ -1,0 +1,79 @@
+﻿@model Aydinturk_agency.Models.ViewModels.OrderStep1VM
+
+@{
+    ViewData["Title"] = " معلومات الحجز 1   ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-3">
+    <div class="containing-alert">
+
+    </div>
+    <div class="card text-center border border-secondary">
+        <h5 class="card-header bg-primary text-white">معلومات الحجز</h5>
+        <div class="card-body card-con">
+            <div class="table-responsive-xxl">
+                <table class="table caption-top text-center table-striped">
+                    <caption class="text-center font-m6">تفاصيل الرحلة</caption>
+                    <tbody>
+                        <tr>
+                            <td>@Model.Flight.Company.Name</td>
+                            <td>@Model.Flight.From.Name</td>
+                            <td>⬅</td>
+                            <td>@Model.Flight.To.Name</td>
+                            <td>@Model.Flight.Price.ToString("c")</td>
+                            <td>Economy</td>
+                            <td>@Model.Flight.Sets</td>
+                            <td>@Model.Flight.Date</td>
+                            <td>@Model.Flight.Time</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form method="get" id="stepOneForm" action="StepTwo">
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <label for="inputEmail4" class="form-label font-m6">@Model.Flight.Price.ToString("c") البالغين</label>
+                        <select asp-route-adult class="form-select form-select-sm" name="adult" aria-label=".form-select-sm example">
+                            <option value="0" selected>--- أختر عدد البالغين ---</option>
+                            @for (var i = 1; i <= @Model.AdultSetsNumber; i++)
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="inputEmail4" class="form-label font-m6">@Model.Flight.PriceForKid.ToString("c") الاطفال</label>
+                        <select asp-route-kids class="form-select form-select-sm" name="kids" aria-label=".form-select-sm example">
+                            <option selected value="0">--- أختر عدد الاطفال ---</option>
+                            @for (var i = 1; i <= @Model.KidsSetsNumber; i++)
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <label for="inputEmail4" class="form-label font-m6">@Model.Flight.PriceForBaby.ToString("c") الرضيع</label>
+                        <select asp-route-baby class="form-select form-select-sm" name="baby" aria-label=".form-select-sm example">
+                            <option value="0" selected>--- أختر عدد الرضع ---</option>
+                            @for (var i = 1; i <= @Model.BabySetsNumber; i++)
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        </select>
+                        <input type="hidden" name="selection" value="@Model.Flight.Id">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary px-5 fw-bold">متابعة</button>
+                <a href="/Customer/Home" class="btn btn-secondary px-5 fw-bold">رجوع</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<script src="/js/StepOneValidation.js">
+    
+   
+</script>
+}
